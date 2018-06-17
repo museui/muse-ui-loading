@@ -6,12 +6,14 @@ Vue.use(MuseUI);
 
 test('Test config', () => {
   const config = Loading.config({
-    overlayColor: 'rgba(0, 0, 0, .7)'
+    overlayColor: 'rgba(0, 0, 0, .7)',
+    className: 'loading-mask'
   });
   expect(config).toEqual({
     overlayColor: 'rgba(0, 0, 0, .7)',
     size: 48,
-    color: 'primary'
+    color: 'primary',
+    className: 'loading-mask'
   });
 });
 
