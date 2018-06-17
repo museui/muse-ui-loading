@@ -23,6 +23,7 @@ yarn add muse-ui-loading
 ## Usage
 
 ```javascript
+import 'muse-ui-loading/dist/muse-ui-loading.css'; // load css
 import Vue from 'vue';
 import MuseUILoading from 'muse-ui-loading';
 Vue.use(MuseUILoading);
