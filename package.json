@@ -1,6 +1,6 @@
 {
   "name": "muse-ui-loading",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Muse-UI plugin loading ",
   "main": "dist/muse-ui-loading.common.js",
   "module": "dist/muse-ui-loading.esm.js",
@@ -11,10 +11,10 @@
   },
   "scripts": {
     "test": "NODE_ENV=test jest -i",
-    "dev": "parcel demo/index.html",
+    "dev": "NODE_ENV=development parcel demo/index.html",
     "lint": "eslint --ext .js src",
     "test:coverage": "NODE_ENV=test jest -i --coverage",
-    "build": "rm -rf dist && rollup --config rollup.config.js"
+    "build": "rm -rf dist && NODE_ENV=module rollup --config rollup.config.js &&  NODE_ENV=production rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -63,13 +63,6 @@
     "vue": "^2.5.16",
     "vue-jest": "^2.6.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 5 versions",
-    "ios >= 7",
-    "android > 4.4",
-    "not ie <= 10"
-  ],
   "jest": {
     "verbose": false,
     "roots": [

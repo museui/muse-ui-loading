@@ -1,6 +1,5 @@
 import './loading.less';
 import color from 'muse-ui/lib/internal/mixins/color';
-import { getZIndex } from 'muse-ui/lib/internal/mixins/popup/utils';
 
 export default {
   mixins: [color],
@@ -26,8 +25,7 @@ export default {
           'mu-loading-wrap__fixed': this.fixed
         },
         style: {
-          'background-color': this.overlayColor,
-          'z-index': getZIndex()
+          'background-color': this.overlayColor
         },
         directives: [{
           name: 'show',
