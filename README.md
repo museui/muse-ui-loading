@@ -20,6 +20,13 @@ npm install -S muse-ui-loading
 yarn add muse-ui-loading
 ```
 
+## CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/muse-ui-loading/dist/muse-ui-loading.all.css"/>
+<script src="https://unpkg.com/muse-ui-loading/dist/muse-ui-loading.js"></script>
+```
+
 ## Usage
 
 ```javascript
