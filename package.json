@@ -6,6 +6,12 @@
   "module": "dist/muse-ui-loading.esm.js",
   "unpkg": "dist/muse-ui-loading.js",
   "jsdelivr": "dist/muse-ui-loading.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
   "directories": {
     "test": "test"
   },
