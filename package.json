@@ -1,6 +1,6 @@
 {
   "name": "muse-ui-loading",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Muse-UI plugin loading ",
   "main": "dist/muse-ui-loading.common.js",
   "module": "dist/muse-ui-loading.esm.js",
@@ -56,7 +56,7 @@
     "jest-css-modules": "^1.1.0",
     "jest-serializer-html": "^5.0.0",
     "less": "^3.0.4",
-    "muse-ui": "^3.0.0-rc.1",
+    "muse-ui": "^3.0.0-rc.4",
     "parcel-bundler": "1.7.1",
     "parcel-plugin-vue": "^1.5.0",
     "postcss-modules": "^1.1.0",
@@ -68,30 +68,5 @@
     "rollup-plugin-uglify": "^4.0.0",
     "vue": "^2.5.16",
     "vue-jest": "^2.6.0"
-  },
-  "jest": {
-    "verbose": false,
-    "roots": [
-      "<rootDir>/test"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "vue"
-    ],
-    "moduleDirectories": [
-      "node_modules"
-    ],
-    "transform": {
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest",
-      "\\.(less)$": "<rootDir>/node_modules/jest-css-modules",
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules",
-      ".*\\.(vue|js)$": "<rootDir>/node_modules/babel-jest"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!vue-router)"
-    ],
-    "snapshotSerializers": [
-      "jest-serializer-html"
-    ]
   }
 }

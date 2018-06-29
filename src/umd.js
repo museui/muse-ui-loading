@@ -1,9 +1,9 @@
 import Vue from 'vue';
-import { FadeTransition } from 'muse-ui/lib/internal/transitions';
-import Progress from 'muse-ui/lib/Progress/CircularProgress';
+import { FadeTransition } from 'muse-ui/src/internal/transitions';
+import Progress from 'muse-ui/src/Progress/CircularProgress';
 import Loading from './index';
-import 'muse-ui/lib/styles/components/progress.less';
-import 'muse-ui/lib/styles/theme.less';
+import 'muse-ui/src/styles/components/progress.less';
+import 'muse-ui/src/styles/theme.less';
 
 Vue.component(Progress.name, Progress);
 Vue.component(FadeTransition.name, FadeTransition);
