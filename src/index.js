@@ -29,8 +29,10 @@ const Loading = function (options = {}) {
       loading.show = false;
       this.instance && (this.instance = null);
       setTimeout(() => {
-        loading.$el.parentNode && loading.$el.parentNode.removeChild(loading.$el);
-        loading.$destroy();
+        if (loading) {
+          loading.$el.parentNode && loading.$el.parentNode.removeChild(loading.$el);
+          loading.$destroy();
+        }
         loading = null;
         target._isLoading = false;
       }, 500);
